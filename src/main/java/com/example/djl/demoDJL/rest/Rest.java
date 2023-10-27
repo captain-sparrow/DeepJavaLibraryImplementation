@@ -56,22 +56,7 @@ public class Rest {
 	        System.out.print("model block : " + model.getBlock());
 	        System.out.print("loaded model successfully");
 	        
-	        model.getModelPath();
-	        final String EXTERNAL_MODEL_PATH = "/Users/sharvari/eclipse-workspace/modelLoadedHere/";
-//	        Path pathToSave = Paths.get(EXTERNAL_MODEL_PATH);
-//	        model.save(pathToSave, "newlycreatedmodel");
-	        
-	        Path sourceFolder = model.getModelPath();
-	        Path destinationFolder = Paths.get(EXTERNAL_MODEL_PATH);
 	}
-	        
-//	        try {
-//	            // Copy the entire folder and its contents to the destination
-//	            copyFolder(sourceFolder, destinationFolder);
-//	            System.out.println("Folder copied successfully!");
-//	        } catch (IOException e) {
-//	            e.printStackTrace();
-//	        }
 	        
 	        private static void copyFolder(Path source, Path destination) throws IOException {
 	            // Create the destination folder if it doesn't exist
@@ -98,14 +83,6 @@ public class Rest {
 	                    return FileVisitResult.CONTINUE;
 	                }
 	            });
-	        
-	 
-	       // Path modelPath = externalFolderPath.resolve("my_model_folder");
-            // Save the model to the external folder
-            //model.save(Paths.get(EXTERNAL_MODEL_PATH), "sbert_model");
-	        
-
-	
 }
 	
 	
